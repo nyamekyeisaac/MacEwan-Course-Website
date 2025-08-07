@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Outline: Data Democratization: No Code</title>
+    <title>Course Outline: Data Democratization for Career Growth</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Professional Teal & Stone -->
+    <!-- Chosen Palette: MacEwan University Red & Grey -->
     <!-- Application Structure Plan: The SPA is designed as a career-focused prospectus. A top navigation bar allows quick jumps to key sections. The 'Overview' immediately addresses the "career-driven professional" persona by highlighting tangible outcomes like portfolio pieces and in-demand skills. The 'Assessment' section uses a donut chart and accordion to transparently show how skills are measured, focusing on practical application. The 'Syllabus' uses a tabbed interface for the updated 4-week plan, making the dense curriculum digestible. This structure was chosen to frame the course as a direct investment in career advancement, prioritizing clarity and value proposition over a simple document layout. -->
     <!-- Visualization & Content Choices: 
         - Report Info: New Assessment Weights (Labs 1-3: 10%, 15%, 15%; Quizzes: 20%; Final Dashboard Lab: 40%). Goal: Clearly show evaluation focus. Viz/Method: Donut Chart (Chart.js Canvas). Interaction: Hover tooltips for details. Justification: More intuitive and professional for showing proportions than a list.
@@ -20,22 +20,22 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F5F5F4; /* stone-100 */
-            color: #1C1917; /* stone-900 */
+            background-color: #f3f4f6; /* gray-100 */
+            color: #111827; /* gray-900 */
         }
         .nav-link {
             transition: color 0.3s, border-bottom-color 0.3s;
             border-bottom: 2px solid transparent;
         }
         .nav-link.active, .nav-link:hover {
-            color: #0D9488; /* teal-600 */
-            border-bottom-color: #0D9488; /* teal-600 */
+            color: #b91c1c; /* red-700 */
+            border-bottom-color: #b91c1c; /* red-700 */
         }
         .tab-btn {
             transition: all 0.3s;
         }
         .tab-btn.active {
-            background-color: #0D9488; /* teal-600 */
+            background-color: #b91c1c; /* red-700 */
             color: white;
         }
         .accordion-content {
@@ -66,18 +66,18 @@
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
-                    <h1 class="text-lg font-bold text-teal-700">Data Analytics for Professionals</h1>
+                    <h1 class="text-lg font-bold text-red-800">Data Analytics for Professionals</h1>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#overview" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-stone-700">Overview</a>
-                        <a href="#assessment" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-stone-700">Assessment</a>
-                        <a href="#syllabus" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-stone-700">Syllabus</a>
-                        <a href="#resources" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-stone-700">Resources</a>
+                        <a href="#overview" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Overview</a>
+                        <a href="#assessment" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Assessment</a>
+                        <a href="#syllabus" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Syllabus</a>
+                        <a href="#resources" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700">Resources</a>
                     </div>
                 </div>
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-stone-500 hover:text-teal-600 hover:bg-stone-200 focus:outline-none">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-red-700 hover:bg-gray-200 focus:outline-none">
                         <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
@@ -87,10 +87,10 @@
         </nav>
         <div id="mobile-menu" class="md:hidden hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#overview" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-stone-700">Overview</a>
-                <a href="#assessment" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-stone-700">Assessment</a>
-                <a href="#syllabus" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-stone-700">Syllabus</a>
-                <a href="#resources" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-stone-700">Resources</a>
+                <a href="#overview" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-gray-700">Overview</a>
+                <a href="#assessment" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-gray-700">Assessment</a>
+                <a href="#syllabus" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-gray-700">Syllabus</a>
+                <a href="#resources" class="block nav-link px-3 py-2 rounded-md text-base font-medium text-gray-700">Resources</a>
             </div>
         </div>
     </header>
@@ -100,56 +100,56 @@
         <!-- Section 1: Overview -->
         <section id="overview" class="scroll-mt-20 mb-16">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-stone-800">Acquire In-Demand AI & Data Skills to Advance Your Career</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600">This 4-week (12-hour) course is designed for professionals from any background seeking to harness the power of data and become indispensable in the modern workplace. Gain practical skills in data analytics and AI using no-code tools—no programming experience required.</p>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-800">Acquire In-Demand AI & Data Skills to Advance Your Career</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">This 4-week (12-hour) course is designed for professionals from any background seeking to harness the power of data and become indispensable in the modern workplace. Gain practical skills in data analytics and AI using no-code tools—no programming experience required.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-12 text-center">
-                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
-                    <h3 class="font-bold text-xl text-teal-700">4 Portfolio Pieces</h3>
-                    <p class="text-stone-600 mt-1">Demonstrate your skills to employers</p>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="font-bold text-xl text-red-800">4 Portfolio Pieces</h3>
+                    <p class="text-gray-600 mt-1">Demonstrate your skills to employers</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
-                    <h3 class="font-bold text-xl text-teal-700">2 Industry Tools</h3>
-                    <p class="text-stone-600 mt-1">Master KNIME & Orange</p>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="font-bold text-xl text-red-800">2 Industry Tools</h3>
+                    <p class="text-gray-600 mt-1">Master KNIME & Orange</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md border border-stone-200">
-                    <h3 class="font-bold text-xl text-teal-700">100% Hands-On</h3>
-                    <p class="text-stone-600 mt-1">Focus on practical application</p>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <h3 class="font-bold text-xl text-red-800">100% Hands-On</h3>
+                    <p class="text-gray-600 mt-1">Focus on practical application</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-stone-200">
-                <h3 class="text-2xl font-bold text-stone-800 mb-6 text-center">Your Career-Focused Learning Outcomes</h3>
-                <p class="text-center text-stone-600 mb-8 max-w-3xl mx-auto">Upon completion, you will have a portfolio of work, practical skills and the confidence to apply data-driven strategies that accelerate your career growth.This section outlines the core competencies you will develop throughout the course.</p>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Your Career-Focused Learning Outcomes</h3>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Upon completion, you will have a portfolio of work, practical skills and the confidence to apply data-driven strategies that accelerate your career growth.This section outlines the core competencies you will develop throughout the course.</p>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-teal-100 text-teal-600 mx-auto mb-4">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-100 text-red-700 mx-auto mb-4">
                             <span>🚀</span>
                         </div>
-                        <h4 class="font-semibold text-stone-800">Implement No-Code Platforms</h4>
-                        <p class="text-sm text-stone-600 mt-1">Master data analysis and model deployment, using visual, user-friendly tools, to add high-value, technical skills to your resume.</p>
+                        <h4 class="font-semibold text-gray-800">Implement No-Code Platforms</h4>
+                        <p class="text-sm text-gray-600 mt-1">Master data analysis and model deployment, using visual, user-friendly tools, to add high-value, technical skills to your resume.</p>
                     </div>
                     <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-teal-100 text-teal-600 mx-auto mb-4">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-100 text-red-700 mx-auto mb-4">
                             <span>🏛️</span>
                         </div>
-                        <h4 class="font-semibold text-stone-800">Design Data Frameworks</h4>
-                        <p class="text-sm text-stone-600 mt-1">Learn to bridge the gap between technical and business teams, positioning yourself as a strategic leader.</p>
+                        <h4 class="font-semibold text-gray-800">Design Data Frameworks</h4>
+                        <p class="text-sm text-gray-600 mt-1">Learn to bridge the gap between technical and business teams, positioning yourself as a strategic leader.</p>
                     </div>
                     <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-teal-100 text-teal-600 mx-auto mb-4">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-100 text-red-700 mx-auto mb-4">
                             <span>💡</span>
                         </div>
-                        <h4 class="font-semibold text-stone-800">Generate Actionable Insights</h4>
-                        <p class="text-sm text-stone-600 mt-1">Use data visualization and storytelling to inform and influence key business decisions and demonstrate your impact.</p>
+                        <h4 class="font-semibold text-gray-800">Generate Actionable Insights</h4>
+                        <p class="text-sm text-gray-600 mt-1">Use data visualization and storytelling to inform and influence key business decisions and demonstrate your impact.</p>
                     </div>
                     <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-teal-100 text-teal-600 mx-auto mb-4">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-red-100 text-red-700 mx-auto mb-4">
                             <span>⚖️</span>
                         </div>
-                        <h4 class="font-semibold text-stone-800">Address Ethical Considerations</h4>
-                        <p class="text-sm text-stone-600 mt-1">Develop a forward-thinking mindset on data governance and bias, a critical skill for modern leadership roles.</p>
+                        <h4 class="font-semibold text-gray-800">Address Ethical Considerations</h4>
+                        <p class="text-sm text-gray-600 mt-1">Develop a forward-thinking mindset on data governance and bias, a critical skill for modern leadership roles.</p>
                     </div>
                 </div>
             </div>
@@ -158,10 +158,10 @@
         <!-- Section 2: Assessment -->
         <section id="assessment" class="scroll-mt-20 mb-16">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-stone-800">Your Portfolio-Building Assessments</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600">Our assessment plan is designed to provide you with tangible work samples. Each lab is a project you can use to demonstrate your capabilities to current and future employers.</p>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-800">Your Portfolio-Building Assessments</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">Our assessment plan is designed to provide you with tangible work samples. Each lab is a project you can use to demonstrate your capabilities to current and future employers.</p>
             </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-stone-200">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-200">
                 <div class="grid md:grid-cols-5 gap-8 items-center">
                     <div class="md:col-span-2">
                         <div class="chart-container">
@@ -180,13 +180,13 @@
         <!-- Section 3: Syllabus -->
         <section id="syllabus" class="scroll-mt-20 mb-16">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-stone-800">Weekly Syllabus</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600">Explore the week-by-week schedule. Each module is a step-by-step guide to building your data analytics skill set. Select a tab to view the topics and hands-on labs for each week.</p>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-800">Weekly Syllabus</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">Explore the week-by-week schedule. Each module is a step-by-step guide to building your data analytics skill set. Select a tab to view the topics and hands-on labs for each week.</p>
             </div>
             
-            <div class="bg-white rounded-xl shadow-lg border border-stone-200 overflow-hidden">
-                <div class="border-b border-stone-200">
-                    <nav id="tabs" class="-mb-px flex space-x-1 sm:space-x-4 justify-center p-2 bg-stone-50" aria-label="Tabs">
+            <div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden">
+                <div class="border-b border-gray-200">
+                    <nav id="tabs" class="-mb-px flex space-x-1 sm:space-x-4 justify-center p-2 bg-gray-50" aria-label="Tabs">
                         <!-- Tab buttons will be injected by JS -->
                     </nav>
                 </div>
@@ -199,19 +199,19 @@
         <!-- Section 4: Resources -->
         <section id="resources" class="scroll-mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-stone-800">Your No-Code Toolkit</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-lg text-stone-600">This course utilizes free, open-source software, ensuring you can continue to practice and apply your skills long after completion. No licenses are required.</p>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-800">Your No-Code Toolkit</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">This course utilizes free, open-source software, ensuring you can continue to practice and apply your skills long after completion. No licenses are required.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-lg p-8 border border-stone-200 flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-bold text-stone-800">KNIME Analytics Platform</h3>
-                    <p class="text-stone-600 mt-2 flex-grow">A powerful, visual platform for data preparation, blending, and dashboarding. We will use KNIME to master the art of cleaning data and presenting insights.</p>
-                    <a href="https://www.knime.com/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-teal-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors">Visit KNIME</a>
+                <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-bold text-gray-800">KNIME Analytics Platform</h3>
+                    <p class="text-gray-600 mt-2 flex-grow">A powerful, visual platform for data preparation, blending, and dashboarding. We will use KNIME to master the art of cleaning data and presenting insights.</p>
+                    <a href="https://www.knime.com/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-red-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-red-800 transition-colors">Visit KNIME</a>
                 </div>
-                <div class="bg-white rounded-xl shadow-lg p-8 border border-stone-200 flex flex-col items-center text-center">
-                    <h3 class="text-2xl font-bold text-stone-800">Orange Data Mining</h3>
-                    <p class="text-stone-600 mt-2 flex-grow">An incredibly interactive and visual tool for machine learning and data visualization. Orange makes it easy to build, test, and understand predictive models.</p>
-                    <a href="https://orangedatamining.com/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-teal-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors">Visit Orange</a>
+                <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-200 flex flex-col items-center text-center">
+                    <h3 class="text-2xl font-bold text-gray-800">Orange Data Mining</h3>
+                    <p class="text-gray-600 mt-2 flex-grow">An incredibly interactive and visual tool for machine learning and data visualization. Orange makes it easy to build, test, and understand predictive models.</p>
+                    <a href="https://orangedatamining.com/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-red-700 text-white font-semibold px-6 py-2 rounded-lg hover:bg-red-800 transition-colors">Visit Orange</a>
                 </div>
             </div>
         </section>
@@ -221,33 +221,33 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const assessmentData = {
-        labels: ['Lab 1: KNIME Orientation (10%)', 'Lab 2: Data Preparation (15%)', 'Lab 3: Predictive Modeling (15%)', 'Weekly Quizzes (20%)', 'Lab 4: Interactive Dashboard (40%)'],
+        labels: ['Lab 1: KNIME Orientation', 'Lab 2: Data Preparation', 'Lab 3: Predictive Modeling', 'Weekly Quizzes', 'Lab 4: Interactive Dashboard'],
         datasets: [{
             data: [10, 15, 15, 20, 40],
-            backgroundColor: ['#5EEAD4', '#2DD4BF', '#0D9488', '#0F766E', '#134E4A'],
-            hoverBackgroundColor: ['#99F6E4', '#5EEAD4', '#14B8A6', '#0D9488', '#115E59'],
-            borderColor: '#F5F5F4',
+            backgroundColor: ['#fca5a5', '#f87171', '#ef4444', '#dc2626', '#b91c1c'],
+            hoverBackgroundColor: ['#fecaca', '#fca5a5', '#f87171', '#ef4444', '#dc2626'],
+            borderColor: '#f3f4f6',
             borderWidth: 2,
         }]
     };
 
     const assessmentDetails = [
-        { title: 'Lab 1: KNIME Orientation', weight: '10%', content: 'Submission of a completed KNIME workflow file. Assessed on completion and correctness, focusing on interface familiarization and basic node manipulation.' },
-        { title: 'Lab 2: Data Preparation', weight: '15%', content: 'Submission of a cleaned dataset and the corresponding KNIME workflow. Assessed via a checklist for successful completion of data cleaning tasks.' },
-        { title: 'Lab 3: Predictive Modeling', weight: '15%', content: 'Submission of an Orange workflow file with at least two predictive models. Assessed on correct model building and comparison.' },
-        { title: 'Weekly Quizzes', weight: '20% (4 x 5%)', content: 'Four short multiple-choice quizzes on the LMS, covering key concepts from each week\'s lecture to reinforce theoretical knowledge.' },
-        { title: 'Lab 4: Interactive Dashboard Creation', weight: '40%', content: 'The final lab is your key portfolio piece. You will submit a KNIME workflow containing an interactive dashboard, assessed on data prep, visualization best practices, interactivity, and clarity of insights.' }
+        { title: 'Lab 1: KNIME Orientation', content: 'Submission of a completed KNIME workflow file. Assessed on completion and correctness, focusing on interface familiarization and basic node manipulation.' },
+        { title: 'Lab 2: Data Preparation', content: 'Submission of a cleaned dataset and the corresponding KNIME workflow. Assessed via a checklist for successful completion of data cleaning tasks.' },
+        { title: 'Lab 3: Predictive Modeling', content: 'Submission of an Orange workflow file with at least two predictive models. Assessed on correct model building and comparison.' },
+        { title: 'Weekly Quizzes', content: 'Four short multiple-choice quizzes on the LMS, covering key concepts from each week\'s lecture to reinforce theoretical knowledge.' },
+        { title: 'Lab 4: Interactive Dashboard Creation', content: 'The final lab is your key portfolio piece. You will submit a KNIME workflow containing an interactive dashboard, assessed on data prep, visualization best practices, interactivity, and clarity of insights.' }
     ];
 
     const syllabusData = [
         {
             title: 'Week 1',
-            theme: 'Foundations of a Data-Driven Culture',
+            theme: 'Foundations of a Data-Driven Career',
             content: `
                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Topics & Learning Outcomes</h4>
-                        <ul class="list-disc list-inside text-stone-600 space-y-1">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Topics & Learning Outcomes</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Differentiate structured vs. unstructured data in business.</li>
                             <li>Define AI and its impact on roles like marketing and operations.</li>
                             <li>Explain how a "citizen data scientist" drives business value.</li>
@@ -255,43 +255,43 @@ document.addEventListener('DOMContentLoaded', function() {
                         </ul>
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Activities & Portfolio Piece</h4>
-                        <p class="text-stone-600 mb-2"><strong>Activities:</strong> Lecture on the data economy and the AI revolution, group discussions on career impact, live demo of KNIME.</p>
-                        <p class="text-stone-600"><strong>Lab 1: My First Data Workflow.</strong> Load, filter, and chart data. This is the first building block for your professional portfolio.</p>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Activities & Portfolio Piece</h4>
+                        <p class="text-gray-600 mb-2"><strong>Activities:</strong> Lecture on the data economy and the AI revolution, group discussions on career impact, live demo of KNIME.</p>
+                        <p class="text-gray-600"><strong>Lab 1: My First Data Workflow.</strong> Load, filter, and chart data. This is the first building block for your professional portfolio.</p>
                     </div>
                 </div>
             `
         },
         {
             title: 'Week 2',
-            theme: 'Mastering Data Preparation and Exploration',
+            theme: 'Mastering Data Preparation',
             content: `
                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Topics & Learning Outcomes</h4>
-                        <ul class="list-disc list-inside text-stone-600 space-y-1">
-                            <li>Outline key stages of data preparation.</li>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Topics & Learning Outcomes</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Outline the key stages of data preparation.</li>
                             <li>Handle missing values, duplicates, and data types in KNIME.</li>
                             <li>Combine data from multiple sources (joins).</li>
                             <li>Create new features from existing data.</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Activities & Portfolio Piece</h4>
-                        <p class="text-stone-600 mb-2"><strong>Activities:</strong> In-depth lecture on the data prep lifecycle, from cleaning to enrichment. Live demo of advanced data transformation.</p>
-                        <p class="text-stone-600"><strong>Lab 2: Taming a Wild Dataset.</strong> Apply a sequence of data preparation techniques to a messy, real-world dataset, demonstrating resilience and problem-solving.</p>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Activities & Portfolio Piece</h4>
+                        <p class="text-gray-600 mb-2"><strong>Activities:</strong> In-depth lecture on the data prep lifecycle, a skill highly valued by employers. Live demo of advanced data transformation.</p>
+                        <p class="text-gray-600"><strong>Lab 2: Taming a Wild Dataset.</strong> Apply a sequence of data preparation techniques to a messy, real-world dataset, demonstrating resilience and problem-solving.</p>
                     </div>
                 </div>
             `
         },
         {
             title: 'Week 3',
-            theme: 'From Data to Decisions Building Predictive Models',
+            theme: 'From Data to Decisions: Building Predictive Models',
             content: `
                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Topics & Learning Outcomes</h4>
-                        <ul class="list-disc list-inside text-stone-600 space-y-1">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Topics & Learning Outcomes</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Explain practical business applications of Machine Learning.</li>
                             <li>Differentiate between Classification and Regression models.</li>
                             <li>Build and compare predictive models in Orange.</li>
@@ -299,9 +299,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         </ul>
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Activities & Portfolio Piece</h4>
-                        <p class="text-stone-600 mb-2"><strong>Activities:</strong> Introduction to ML concepts and a live demo of the highly visual Orange Data Mining tool.</p>
-                        <p class="text-stone-600"><strong>Lab 3: The Model Bake-Off.</strong> Build, test, and compare two classification models, simulating a real-world task of providing a data-driven recommendation.</p>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Activities & Portfolio Piece</h4>
+                        <p class="text-gray-600 mb-2"><strong>Activities:</strong> Introduction to ML concepts and a live demo of the highly visual Orange Data Mining tool.</p>
+                        <p class="text-gray-600"><strong>Lab 3: The Model Bake-Off.</strong> Build, test, and compare two classification models, simulating a real-world task of providing a data-driven recommendation.</p>
                     </div>
                 </div>
             `
@@ -312,8 +312,8 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Topics & Learning Outcomes</h4>
-                        <ul class="list-disc list-inside text-stone-600 space-y-1">
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Topics & Learning Outcomes</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Apply data visualization best practices to create clear insights.</li>
                             <li>Define principles of effective dashboard design.</li>
                             <li>Use data storytelling to build a compelling business case.</li>
@@ -321,9 +321,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         </ul>
                     </div>
                     <div>
-                        <h4 class="font-bold text-lg text-stone-800 mb-2">Activities & Final Portfolio Piece</h4>
-                        <p class="text-stone-600 mb-2"><strong>Activities:</strong> Lecture on data storytelling and dashboard design. Demo of building an interactive dashboard in KNIME.</p>
-                        <p class="text-stone-600"><strong>Lab 4: Business Intelligence Dashboard.</strong> Apply your end-to-end skills to create an interactive dashboard—a comprehensive portfolio piece to showcase your new capabilities.</p>
+                        <h4 class="font-bold text-lg text-gray-800 mb-2">Activities & Final Portfolio Piece</h4>
+                        <p class="text-gray-600 mb-2"><strong>Activities:</strong> Lecture on data storytelling and dashboard design. Demo of building an interactive dashboard in KNIME.</p>
+                        <p class="text-gray-600"><strong>Lab 4: Business Intelligence Dashboard.</strong> Apply your end-to-end skills to create an interactive dashboard—a comprehensive portfolio piece to showcase your new capabilities.</p>
                     </div>
                 </div>
             `
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     display: false
                 },
                 tooltip: {
-                    backgroundColor: '#1C1917',
+                    backgroundColor: '#111827',
                     titleFont: { size: 14, weight: 'bold' },
                     bodyFont: { size: 12 },
                     padding: 10,
@@ -359,17 +359,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const accordionContainer = document.getElementById('accordion-container');
     assessmentDetails.forEach((item, index) => {
         const accordionItem = document.createElement('div');
-        accordionItem.className = 'border border-stone-200 rounded-lg';
+        accordionItem.className = 'border border-gray-200 rounded-lg';
         accordionItem.innerHTML = `
-            <button class="accordion-button w-full flex justify-between items-center text-left p-4 bg-stone-50 hover:bg-stone-100 focus:outline-none">
-                <span class="font-semibold text-stone-700">${item.title}</span>
-                <div class="flex items-center">
-                    <span class="text-sm font-bold text-teal-600 mr-4">${item.weight}</span>
-                    <svg class="w-5 h-5 text-stone-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </div>
+            <button class="accordion-button w-full flex justify-between items-center text-left p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                <span class="font-semibold text-gray-700">${item.title}</span>
+                <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div class="accordion-content">
-                <p class="p-4 pt-0 text-stone-600">${item.content}</p>
+                <p class="p-4 pt-0 text-gray-600">${item.content}</p>
             </div>
         `;
         accordionContainer.appendChild(accordionItem);
@@ -398,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     syllabusData.forEach((week, index) => {
         const tabButton = document.createElement('button');
-        tabButton.className = 'tab-btn whitespace-nowrap flex-1 md:flex-none py-2 px-3 sm:px-4 font-medium text-sm rounded-md text-stone-600 bg-stone-100 hover:bg-stone-200';
+        tabButton.className = 'tab-btn whitespace-nowrap flex-1 md:flex-none py-2 px-3 sm:px-4 font-medium text-sm rounded-md text-gray-600 bg-gray-100 hover:bg-gray-200';
         tabButton.innerHTML = `<span class="font-bold">${week.title}:</span> <span class="hidden sm:inline">${week.theme}</span>`;
         tabButton.dataset.target = `week-${index}`;
         tabsContainer.appendChild(tabButton);
